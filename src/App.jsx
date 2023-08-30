@@ -1,4 +1,4 @@
-import Cabecalho from "./components/CAbecalho";
+import Cabecalho from "./components/Cabecalho";
 import Conteudo from "./components/Conteudo";
 import Rodape from "./components/Rodape";
 import viteLogo from "./assets/vite.svg";
