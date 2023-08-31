@@ -1,4 +1,7 @@
-import { ListaProdutos } from "../components/ListaProdutos"
+import { ListaProdutos } from "../components/ListaProdutos";
+import { Link } from "react-router-dom";
+import {AiFillEdit as EditObj} from "react-icons/ai";
+import {RiDeleteBin2Fill as DelObj} from "react-icons/ri"
 
 export default function Produtos() {
     return (
@@ -12,6 +15,7 @@ export default function Produtos() {
             <th>NOME</th>
             <th>DESCRIÇÃO</th>
             <th>PREÇO</th>
+            <th>EDITAR/EXCLUIR</th>
 
           </tr>
         </thead>
@@ -22,13 +26,14 @@ export default function Produtos() {
                       <td>{produto.nome}</td>
                       <td>{produto.nome}</td>
                       <td>{produto.preco}</td>
+                      <td> <Link to={`/editar/produtos/${produto.id}`}><EditObj/></Link> | <Link to={`/excluir/produtos/${produto.id}`}><DelObj/></Link></td>
                     </tr>
                 ))}
         </tbody>
 
         <tfoot>
           <tr>
-            <td colSpan={3}>PRODUTOS</td>
+            <td colSpan={4}>PRODUTOS</td>
           </tr>
         </tfoot>
       </table>
