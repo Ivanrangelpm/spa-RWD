@@ -1,13 +1,13 @@
 import Cabecalho from "./components/Cabecalho";
-import Conteudo from "./components/Conteudo";
+//import Conteudo from "./components/Conteudo";
 import Rodape from "./components/Rodape";
-import viteLogo from "./assets/vite.svg";
+//import viteLogo from "./assets/vite.svg";
 import { Outlet } from "react-router-dom";
 
 export default function App() {
   //Área de declaração de variáveis/constantes/estados/refs/contexts/funções, etc...
 
-  let viteLogoAlt = "Logo do Vite";
+  //let viteLogoAlt = "Logo do Vite";
 
   return (
     <>
