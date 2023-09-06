@@ -16,7 +16,6 @@ export default function Produtos() {
             <th>DESCRIÇÃO</th>
             <th>PREÇO</th>
             <th>EDITAR/EXCLUIR</th>
-
           </tr>
         </thead>
         <tbody>
