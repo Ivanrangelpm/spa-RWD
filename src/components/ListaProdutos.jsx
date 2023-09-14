@@ -1,7 +1,37 @@
 export const ListaProdutos = [
-
-    {id:1, nome:'Teclado', desc:'Mecanico', preco: 150},
-    {id:2, nome:'Mouse', desc:'Gamer', preco: 120},
-    {id:3, nome:'Head-Set', desc:'8D', preco: 550},
-    {id:4, nome:'Monitor', desc:'32"', preco: 1500}
-];
+    {
+        id: 1,
+        nome: 'Teclado',
+        desc: 'Mecânico',
+        preco: 150,
+        img:'https://picsum.photos/200/300'
+    },
+    {
+        id: 2,
+        nome: 'Mouse',
+        desc: 'Gamer',
+        preco: 120,
+        img:'https://picsum.photos/200/300'
+    },
+    {
+        id: 3,
+        nome: 'Headset',
+        desc: '8D',
+        preco: 550,
+        img:'https://picsum.photos/200/300'
+    },
+    {
+        id: 4,
+        nome: 'Monitor',
+        desc: '32"',
+        preco: 1500,
+        img:'https://picsum.photos/200/300'
+    },
+        {
+        id: 5,
+        nome: 'Cadeira',
+        desc: 'Cadeira Gamer DxRacer',
+        preco: 2800,
+        img:'https://picsum.photos/200/300'
+    },
+]

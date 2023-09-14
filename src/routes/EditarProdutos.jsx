@@ -35,13 +35,20 @@ export default function EditarProdutos() {
 
     let indice;
 
-    ListaProdutos.forEach((item, index) =>{
-      if(item.id == produto.id){
-        indice = index;
-      }});
+    // ListaProdutos.forEach((item, index) =>{
+    //   if(item.id == produto.id){
+    //     indice = index;
+    //   }});
+
+
+      indice = ListaProdutos.findIndex(item => item.id == produto.id);
 
       ListaProdutos.splice(indice,1,produto);
+
+
       alert("Seu produto foi alterado com sucesso!")
+      
+      
       navigate("/produtos");
   }
 
