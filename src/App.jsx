@@ -4,8 +4,7 @@ import { Outlet } from "react-router-dom";
 import style from "./App.module.css";
 
 export default function App() {
-  //Área declarativa
-  let viteLogoAlt = "Vite Logo";
+
   return (
     <>
       {/* Área imperativa */}
