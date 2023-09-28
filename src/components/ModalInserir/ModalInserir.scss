@@ -1,0 +1,28 @@
+
+//Criando variaeis no SASS
+$bgColor:#ff0000;
+$txtColor:#fff;
+$displayView:block;
+$bordaArredondada:5px;
+
+//Criando um agrupamento de estilos (MIXING)
+
+@mixin estiloPadraoForm($tamanhoFonte,$familiaFonte, $corFonte){
+
+    form{
+        font-family: $familiaFonte;
+        font-size: $tamanhoFonte;
+        color: $corFonte;
+        label{
+            display: $displayView;
+            letter-spacing: 2px;
+        }
+
+        input{
+            display: $displayView;
+            border-radius: $bordaArredondada;
+        }
+
+
+    }
+}
