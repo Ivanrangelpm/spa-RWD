@@ -1,18 +1,17 @@
 
-//Criando variaeis no SASS
+//Criando variáveis no SASS:
 $bgColor:#ff0000;
 $txtColor:#fff;
 $displayView:block;
 $bordaArredondada:5px;
-
-//Criando um agrupamento de estilos (MIXING)
-
-@mixin estiloPadraoForm($tamanhoFonte,$familiaFonte, $corFonte){
+//Criando um agrupando de estilos, chamamos de MIXING:
+@mixin estiloPadraoForm($tamanhoFonte,$familiaFonte,$corFonte){
 
     form{
         font-family: $familiaFonte;
         font-size: $tamanhoFonte;
         color: $corFonte;
+
         label{
             display: $displayView;
             letter-spacing: 2px;
@@ -21,21 +20,24 @@ $bordaArredondada:5px;
         input{
             display: $displayView;
             border-radius: $bordaArredondada;
-
         }
-
-
     }
 }
+
+
 
 $estiloDaFonte: Arial, Helvetica, sans-serif;
 
 .formGroup{
-    @include estiloPadraoForm(1.5rem, $estiloDaFonte, #040532 );
+    @include estiloPadraoForm(1.5rem, $estiloDaFonte ,#040532 );
 
     form{
         width: 90%;
         margin: 0 auto;
+    }
+
+    div{
+        clear: right;
     }
 
     .btnClose{
@@ -45,42 +47,44 @@ $estiloDaFonte: Arial, Helvetica, sans-serif;
         width: 2%;
         display: $displayView;
         text-align: center;
+        user-select: none;
         float: right;
         border: 2px solid #ccc;
 
         &:hover{
-            background-color: #000;
+            background-color: #000000;
             color: $txtColor;
         }
 
         &:active{
             background-color: $bgColor;
         }
+
+
     }
-
-
+    
     input{
         border: 0 solid transparent;
         width: 68%;
         height: 40px;
         margin: 1% auto;
         padding: 0 10px;
+
     }
 
-
     legend{
-        color: $txtColor ;
+        color: $txtColor;
     }
 
     label{
-        color: $txtColor ;
+        color: $txtColor;
         margin: 0 auto;
         width: 70%;
-
+        
     }
 
     button{
-        font-weight: bold;
+        font-weight: bold; 
         border: 0 solid transparent;
         border-radius: $bordaArredondada;
         margin: 2% auto;
@@ -90,11 +94,11 @@ $estiloDaFonte: Arial, Helvetica, sans-serif;
         background-color: green;
         color: $txtColor;
         font-size: 1.5rem;
-        transition: 400ms;
-        
+        transition: background-color 300ms, color 300ms;
+
         &:hover{
-            background-color: #d2f9f2;
-            color: #000000 ;
+            background-color: #d2f9d2;
+            color: #000000;
         }
     }
 
